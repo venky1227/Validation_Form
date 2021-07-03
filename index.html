@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Form Validation</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="index.js"></script>
+        
+    </head>
+    <body>
+        <div class="main">
+        <h1 class="heading">Form Validation</h1>
+        <form onsubmit="return validate()" action="message.html">
+            <input id="uname" placeholder="Username" type="text"/>
+            <label id="lbluser" style="color:red; visibility: hidden;">Invalid</label>
+            <input id="pass" placeholder="Password" type="password"/>
+            <label id="lbluser1" style="color:red; visibility: hidden;">Invalid Password</label>
+            <label id="lbluser2" style="color:red; visibility: hidden;">Password to short</label>
+            <label class="gender">Gender</label>
+            <input type="radio" name="gender" value="male"> Male</input>
+            <input type="radio" name="gender" value="female"> Female</input>
+            <div class="address">
+                <label for="Address"></label>
+                <input class="add-input" type="text" placeholder="Address"/>
+            </div>
+    
+            <div>
+                <label class="form-inline">Hobbies</label>
+                <label><input type="checkbox" name="hobbies[]" value="sports"> Sports</label>
+                <label><input type="checkbox" name="hobbies[]" value="movies"> Movies</label>
+                <label><input type="checkbox" name="hobbies[]" value="music"> Music</label>
+            </div>
+            <label class="age"for="age">Age</label>
+            <select id="age" name="age">
+                <option value="select">Select Age</option>
+                <option value="18-24">18-24</option>
+                <option value="25-36">25-36</option>
+                <option value="37-50">37-50</option>
+            </select>
+            <button type ="submit" class="btn">Submit</button>
+        </form>
+        </div>
+    </body>
+</html> 
